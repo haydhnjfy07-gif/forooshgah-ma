@@ -1,0 +1,376 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروشگاه ما | خرید آنلاین</title>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="navbar">
+    <div class="nav-container">
+        <a href="#home" class="logo">🛍️ فروشگاه ما</a>
+        <nav>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">خانه</a></li>
+                <li><a href="#products">محصولات</a></li>
+                <li><a href="#about">درباره ما</a></li>
+                <li><a href="#contact">تماس</a></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle" id="menuToggle" aria-label="منو">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>به فروشگاه ما خوش آمدید</h1>
+        <p>بهترین محصولات با کیفیت بالا و قیمت مناسب</p>
+        <a href="#products" class="btn-primary">مشاهده محصولات</a>
+    </div>
+</section>
+<section id="products" class="section">
+    <div class="container">
+        <h2 class="section-title">محصولات</h2>
+        <p class="section-subtitle">محصولات آرایشی و بهداشتی اورجینال با بهترین قیمت</p>
+        <div class="products-grid" id="productsGrid"></div>
+    </div>
+</section>
+<section id="about" class="section section-alt">
+    <div class="container">
+        <h2 class="section-title">درباره ما</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>فروشگاه ما با هدف ارائه محصولات باکیفیت و خدمات عالی به مشتریان گرامی تاسیس شده است. تمامی محصولات ما اورجینال و با ضمانت کیفیت عرضه می‌شوند.</p>
+                <ul class="about-features">
+                    <li>✅ ضمانت اصالت کالا</li>
+                    <li>🚚 ارسال سریع به سراسر کشور</li>
+                    <li>💬 پشتیبانی آنلاین</li>
+                    <li>↩️ امکان بازگشت کالا</li>
+                </ul>
+            </div>
+            <div class="about-image">
+                <div class="about-icon">🏪</div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contact" class="section">
+    <div class="container">
+        <h2 class="section-title">تماس با ما</h2>
+        <p class="section-subtitle">برای خرید یا سوال درباره محصولات از طریق پیام‌رسان‌های زیر با ما در ارتباط باشید</p>
+        <div class="contact-buttons">
+            <a href="https://t.me/haydhNjafy" target="_blank" rel="noopener" class="contact-card telegram">
+                <div class="contact-icon">✈️</div>
+                <h3>تلگرام</h3>
+                <p>از طریق تلگرام پیام دهید</p>
+                <span class="contact-action">تماس برای خرید</span>
+            </a>
+            <a href="https://rubika.ir/haydh74" target="_blank" rel="noopener" class="contact-card rubika">
+                <div class="contact-icon">💬</div>
+                <h3>روبیکا</h3>
+                <p>از طریق روبیکا پیام دهید</p>
+                <span class="contact-action">تماس برای خرید</span>
+            </a>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <p>© ۲۰۲۶ فروشگاه ما — تمامی حقوق محفوظ است.</p>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
+فایل ۲: styles.css
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--primary:#4f46e5;--primary-dark:#4338ca;--primary-light:#818cf8;--bg:#f8fafc;--bg-alt:#fff;--text:#1e293b;--text-light:#64748b;--radius:16px;--shadow:0 4px 24px rgba(0,0,0,.06);--shadow-lg:0 12px 40px rgba(0,0,0,.12);--telegram:#2aabee;--rubika:#ff6b35}
+body{font-family:'Vazirmatn',sans-serif;background:var(--bg);color:var(--text);line-height:1.8;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+img{max-width:100%;display:block}
+.container{max-width:1200px;margin:0 auto;padding:0 20px}
+.navbar{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);box-shadow:0 1px 12px rgba(0,0,0,.06)}
+.nav-container{max-width:1200px;margin:0 auto;padding:16px 20px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:1.4rem;font-weight:800;color:var(--primary);white-space:nowrap}
+.nav-links{display:flex;gap:28px}
+.nav-links a{font-weight:600;color:var(--text);transition:color .2s;position:relative}
+.nav-links a::after{content:'';position:absolute;bottom:-4px;right:0;width:0;height:2px;background:var(--primary);transition:width .3s}
+.nav-links a:hover{color:var(--primary)}
+.nav-links a:hover::after{width:100%}
+.menu-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer}
+.menu-toggle span{width:26px;height:3px;background:var(--text);border-radius:3px;transition:.3s}
+.hero{background:linear-gradient(135deg,#4f46e5,#7c3aed);color:#fff;text-align:center;padding:100px 20px 120px}
+.hero h1{font-size:2.6rem;font-weight:800;margin-bottom:16px}
+.hero p{font-size:1.2rem;opacity:.9;margin-bottom:32px}
+.btn-primary{display:inline-block;background:#fff;color:var(--primary);padding:14px 40px;border-radius:50px;font-weight:700;font-size:1.05rem;transition:transform .2s,box-shadow .2s}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,.2)}
+.section{padding:80px 0}
+.section-alt{background:var(--bg-alt)}
+.section-title{text-align:center;font-size:2rem;font-weight:800;margin-bottom:8px}
+.section-subtitle{text-align:center;color:var(--text-light);margin-bottom:50px;font-size:1.05rem}
+.products-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.product-card{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:transform .3s,box-shadow .3s;display:flex;flex-direction:column}
+.product-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg)}
+.product-image{width:100%;height:240px;overflow:hidden;background:#f1f5f9}
+.product-image img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.product-card:hover .product-image img{transform:scale(1.08)}
+.product-info{padding:22px;flex:1;display:flex;flex-direction:column}
+.product-name{font-size:1.25rem;font-weight:700;margin-bottom:4px}
+.product-brand{font-size:.85rem;color:var(--primary-light);font-weight:600;margin-bottom:8px}
+.product-desc{color:var(--text-light);font-size:.95rem;margin-bottom:16px;flex:1}
+.product-price{font-size:1.4rem;font-weight:800;color:var(--primary);margin-bottom:16px}
+.product-price .currency{font-size:.9rem;font-weight:500;color:var(--text-light);margin-right:4px}
+.btn-buy{display:block;text-align:center;background:var(--primary);color:#fff;padding:12px;border-radius:12px;font-weight:700;font-size:1rem;transition:background .2s,transform .2s}
+.btn-buy:hover{background:var(--primary-dark);transform:scale(1.03)}
+.about-content{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.about-text p{margin-bottom:16px;color:var(--text-light)}
+.about-features{margin-top:24px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.about-features li{font-weight:600;font-size:.95rem}
+.about-image{display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#eef2ff,#ede9fe);border-radius:var(--radius);height:320px}
+.about-icon{font-size:6rem}
+.contact-buttons{display:grid;grid-template-columns:1fr 1fr;gap:28px;max-width:700px;margin:0 auto}
+.contact-card{background:#fff;border-radius:var(--radius);padding:40px 30px;text-align:center;box-shadow:var(--shadow);transition:transform .3s,box-shadow .3s;border:2px solid transparent}
+.contact-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+.contact-card.telegram:hover{border-color:var(--telegram)}
+.contact-card.rubika:hover{border-color:var(--rubika)}
+.contact-icon{font-size:3rem;margin-bottom:16px}
+.contact-card h3{font-size:1.3rem;margin-bottom:8px}
+.contact-card p{color:var(--text-light);margin-bottom:20px;font-size:.95rem}
+.contact-action{display:inline-block;padding:10px 28px;border-radius:50px;font-weight:700;color:#fff;transition:opacity .2s}
+.telegram .contact-action{background:var(--telegram)}
+.rubika .contact-action{background:var(--rubika)}
+.contact-action:hover{opacity:.85}
+.footer{background:#1e293b;color:#cbd5e1;text-align:center;padding:32px 20px;font-size:.95rem}
+@media(max-width:900px){.products-grid{grid-template-columns:repeat(2,1fr)}.about-content{grid-template-columns:1fr}.about-image{order:-1;height:200px}}
+@media(max-width:600px){.nav-links{position:fixed;top:64px;right:-100%;flex-direction:column;background:#fff;width:70%;height:calc(100vh - 64px);padding:30px;gap:20px;box-shadow:-4px 0 20px rgba(0,0,0,.1);transition:right .3s}.nav-links.active{right:0}.menu-toggle{display:flex}.menu-toggle.active span:nth-child(1){transform:rotate(45deg) translate(6px,6px)}.menu-toggle.active span:nth-child(2){opacity:0}.menu-toggle.active span:nth-child(3){transform:rotate(-45deg) translate(6px,-6px)}.hero h1{font-size:1.8rem}.hero p{font-size:1rem}.products-grid{grid-template-columns:1fr}.contact-buttons{grid-template-columns:1fr}.about-features{grid-template-columns:1fr}.section-title{font-size:1.6rem}}
+فایل ۳: script.js
+const products = [
+    {
+        name: "رژگونه دریم تاچ شیگلم",
+        brand: "SHEGLAM",
+        price: "۳,۶۰۰,۰۰۰",
+        desc: "بافت نرم و مخملی، رنگدانه‌های زیبا، پخش آسان و یکدست، جلوه مات و طبیعی، دارای آینه، مناسب آرایش روزانه و مجلسی. پک ۸ عددی.",
+        image: "https://images.unsplash.com/photo-1633169108533-fd6f95a2f3f5?w=600&q=80"
+    },
+    {
+        name: "ادکلن بیلی ایلیش AXSiS",
+        brand: "Billie Eilish",
+        size: "۳۵ میل",
+        price: "۴۸۰,۰۰۰",
+        desc: "رایحه گرم، شیرین و وانیلی با نت‌های کاکائو، عنبر و مشک. جذاب و دلنشین. قیمت عمده (۳ عدد به بالا): ۴۰۰,۰۰۰ تومان.",
+        image: "https://images.unsplash.com/photo-1541643600914-78b084683601?w=600&q=80"
+    },
+    {
+        name: "ریمل ایزادورا",
+        brand: "Isadora",
+        price: "۳۸۰,۰۰۰",
+        desc: "حجم‌دهنده و بلندکننده مژه‌ها، بدون ریزش، رنگدانه مشکی قوی، ماندگاری بالا، ضد حساسیت. قیمت عمده (۳ عدد به بالا): ۳۰۰,۰۰۰ تومان.",
+        image: "https://images.unsplash.com/photo-1631214540242-3cd8c4b0b3b6?w=600&q=80"
+    },
+    {
+        name: "دستگاه وکس سیلیکونی تاشو",
+        brand: "تاشو",
+        price: "۹۵۰,۰۰۰",
+        desc: "گرمکن وکس تمام سیلیکونی، نشکن و مقاوم، مدل تاشو، وکس بهش نمی‌چسبه، مناسب خانگی و ساللی. رنگ‌بندی: صورتی، بنفش، آبی. قیمت عمده: ۸۷۰,۰۰۰ تومان.",
+        image: "https://images.unsplash.com/photo-1633169108533-fd6f95a2f3f5?w=600&q=80"
+    },
+    {
+        name: "آبرسان تیوپی شیرگاو بارین",
+        brand: "شیرگاو بارین",
+        price: "۲۹۰,۰۰۰",
+        desc: "کیفیت عالی، اورجینال. قیمت‌های عمده: ۳ عدد ۷۲۵,۰۰۰ — ۶ عدد ۱,۴۲۰,۰۰۰ — ۱۲ عدد ۲,۸۰۰,۰۰۰ تومان.",
+        image: "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&q=80"
+    }
+];
+
+const TELEGRAM_URL = "https://t.me/haydhNjafy";
+const RUBIKA_URL = "https://rubika.ir/haydh74";
+
+function renderProducts() {
+    const grid = document.getElementById('productsGrid');
+    grid.innerHTML = products.map(p => `
+        <div class="product-card">
+            <div class="product-image">
+                <img src="${p.image}" alt="${p.name}" loading="lazy">
+            </div>
+            <div class="product-info">
+                <h3 class="product-name">${p.name}</h3>
+                ${p.brand ? `<div class="product-brand">${p.brand}${p.size ? ' • ' + p.size : ''}</div>` : ''}
+                <p class="product-desc">${p.desc}</p>
+                <div class="product-price">${p.price}<span class="currency">تومان</span></div>
+                <a href="${TELEGRAM_URL}" target="_blank" rel="noopener" class="btn-buy">تماس برای خرید</a>
+            </div>
+        </div>
+    `).join('');
+
+    document.querySelectorAll('.contact-card.telegram').forEach(el => el.href = TELEGRAM_URL);
+    document.querySelectorAll('.contact-card.rubika').forEach(el => el.href = RUBIKA_URL);
+}
+
+function setupMenu() {
+    const toggle = document.getElementById('menuToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+        toggle.classList.toggle('active');
+        links.classList.toggle('active');
+    });
+    links.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => {
+            toggle.classList.remove('active');
+            links.classList.remove('active');
+        });
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    renderProducts();
+    setupMenu();
+});
+سه فایل رو کپی کردید؟ حالا در صفحه GitHub که باز هستید:
+
+۱. روی Add file بزنید → Create new file ۲. در کادر نام بنویسید: index.html ۳. محتوای فایل اول رو پیست کنید ۴. روی Commit new file بزنید ۵. همین کار رو برای styles.css و script.js تکرار کنید
+
+بگید وقتی تموم شد.
+
+
+
+گفته برای اضافه کردن فایلهای مخزن خود انها را ب اینحا بکشید پایینش با خط ابی نوشتعفایاهای خودتث را انتخاب کنید 
+
+
+See reasoning
+Agent
+اون روش آپلود برای گوشی سخت‌ست. به جای اون، فایل‌ها رو مستقیم در GitHub بسازید:
+
+روش ساده‌تر:
+۱. روی Add file (افزودن فایل) بالا سمت راست بزنید ۲. روی Create new file (ایجاد فایل جدید) بزنید ۳. در کادر کوچک بالا، بنویسید: index.html ۴. در کادر بزرگ پایین، محتوای فایل اول رو پیست کنید ۵. پایین صفحه روی Commit new file بزنید
+
+بعدش همین کار رو برای فایل دوم و سوم تکرار می‌کنیم. اول index.html رو بسازید و بگید تموم شد.
+
+
+
+الان دقیقا باید چکار کنم
+
+
+See reasoning
+Agent
+قدم اول:
+در صفحه GitHub که هستید، بالا سمت چپ یه دکمه آبی به اسم Add file هست. روش بزنید.
+
+بگید چی نوشته یا چه گزینه‌هایی نشون داده شده.
+
+
+
+من س فایل بالا ک اماده کردی ذخیره کنم کپی کنم
+
+
+See reasoning
+Agent
+نیازی نیست در گوشی فایل ذخیره کنید! می‌تونید مستقیم در GitHub کپی کنید:
+
+قدم‌به‌قدم:
+۱. در صفحه GitHub، روی دکمه آبی Add file بزنید ۲. روی Create new file بزنید ۳. در کادر کوچک بالا بنویسید: index.html ۴. در کادر بزرگ پایین، محتوای فایل اول رو که کپی کردید پیست کنید ۵. پایین صفحه روی دکمه سبز Commit new file بزنید
+
+بعدش همین کار رو برای styles.css و script.js هم تکرار می‌کنیم.
+
+اول index.html رو انجام بدید و بگید تموم شد.
+
+همین س تا کوچیک بنویس دونه دونه کپی کنن
+
+
+See reasoning
+Agent
+چشم! یکی‌یکی می‌فرستم. اول index.html:
+
+فایل ۱: index.html
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>فروشگاه ما | خرید آنلاین</title>
+<link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="navbar">
+<div class="nav-container">
+<a href="#home" class="logo">🛍️ فروشگاه ما</a>
+<nav>
+<ul class="nav-links" id="navLinks">
+<li><a href="#home">خانه</a></li>
+<li><a href="#products">محصولات</a></li>
+<li><a href="#about">درباره ما</a></li>
+<li><a href="#contact">تماس</a></li>
+</ul>
+</nav>
+<button class="menu-toggle" id="menuToggle" aria-label="منو">
+<span></span><span></span><span></span>
+</button>
+</div>
+</header>
+<section id="home" class="hero">
+<div class="hero-content">
+<h1>به فروشگاه ما خوش آمدید</h1>
+<p>بهترین محصولات با کیفیت بالا و قیمت مناسب</p>
+<a href="#products" class="btn-primary">مشاهده محصولات</a>
+</div>
+</section>
+<section id="products" class="section">
+<div class="container">
+<h2 class="section-title">محصولات</h2>
+<p class="section-subtitle">محصولات آرایشی و بهداشتی اورجینال با بهترین قیمت</p>
+<div class="products-grid" id="productsGrid"></div>
+</div>
+</section>
+<section id="about" class="section section-alt">
+<div class="container">
+<h2 class="section-title">درباره ما</h2>
+<div class="about-content">
+<div class="about-text">
+<p>فروشگاه ما با هدف ارائه محصولات باکیفیت و خدمات عالی به مشتریان گرامی تاسیس شده است. تمامی محصولات ما اورجینال و با ضمانت کیفیت عرضه می‌شوند.</p>
+<ul class="about-features">
+<li>✅ ضمانت اصالت کالا</li>
+<li>🚚 ارسال سریع به سراسر کشور</li>
+<li>💬 پشتیبانی آنلاین</li>
+<li>↩️ امکان بازگشت کالا</li>
+</ul>
+</div>
+<div class="about-image">
+<div class="about-icon">🏪</div>
+</div>
+</div>
+</div>
+</section>
+<section id="contact" class="section">
+<div class="container">
+<h2 class="section-title">تماس با ما</h2>
+<p class="section-subtitle">برای خرید یا سوال درباره محصولات از طریق پیام‌رسان‌های زیر با ما در ارتباط باشید</p>
+<div class="contact-buttons">
+<a href="https://t.me/haydhNjafy" target="_blank" rel="noopener" class="contact-card telegram">
+<div class="contact-icon">✈️</div>
+<h3>تلگرام</h3>
+<p>از طریق تلگرام پیام دهید</p>
+<span class="contact-action">تماس برای خرید</span>
+</a>
+<a href="https://rubika.ir/haydh74" target="_blank" rel="noopener" class="contact-card rubika">
+<div class="contact-icon">💬</div>
+<h3>روبیکا</h3>
+<p>از طریق روبیکا پیام دهید</p>
+<span class="contact-action">تماس برای خرید</span>
+</a>
+</div>
+</div>
+</section>
+<footer class="footer">
+<div class="container">
+<p>© ۲۰۲۶ فروشگاه ما — تمامی حقوق محفوظ است.</p>
+</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
